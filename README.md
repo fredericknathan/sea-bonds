@@ -1,6 +1,6 @@
 # Southeast Asian (SEA) Fixed Income PCA Pipeline
 
-A quantitative pipeline for extracting Southeast Asian fixed-income securities (Indonesia, Malaysia, Philippines, Singapore, Thailand) via **Bloomberg Query Language (BQL)**, processing market/credit risk metrics, and decomposing cross-sectional variance using Principal Component Analysis (PCA).
+A quantitative pipeline for extracting Southeast Asian fixed-income securities (Indonesia, Malaysia, Philippines, Singapore, Thailand) via **Bloomberg Query Language (BQL)** and **Bloomberg Quant (BQuant)**, processing market/credit risk metrics, and decomposing cross-sectional variance using Principal Component Analysis (PCA).
 
 ---
 
@@ -29,15 +29,3 @@ A quantitative pipeline for extracting Southeast Asian fixed-income securities (
    * Standardizes continuous/ordinal features via `StandardScaler`[cite: 1].
    * Decomposes variance into 4 principal components via `sklearn.decomposition.PCA`[cite: 1].
    * Generates interactive 3D cluster visualizations via `plotly.express` and static loading heatmaps via `seaborn`[cite: 1].
-
----
-
-## Repository Structure
-
-```text
-├── sea_bonds_pca.ipynb          # Executable Jupyter notebook with pre-rendered outputs
-├── build_notebook.py            # Automation script to construct .ipynb and mock datasets
-├── mock_features_extended.csv   # 402-row feature matrix for offline PCA reproduction
-├── mock_plot_df.csv             # Pre-calculated PCA scores and bond metadata
-├── image_5960de.png             # Seaborn PCA loadings heatmap
-└── README.md                    # Project documentation
